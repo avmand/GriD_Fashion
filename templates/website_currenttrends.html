@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background-image: url("./static/img/background.png"); 
+  color: Black;
+  
+  
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  background-color: #d2e4e4;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 100%; /* IE10 */
+  flex: 100%;
+  background-color: #d2e4e4;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+-ms-flex: 100%; /* IE10 */
+  flex: 100%;
+  padding: 20px;
+  text-align: center;
+  background: #dbe4d2;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+
+
+</body>
+</html>
+
+	<body>
+    	<div class="header">
+          <h1>Fashion Trends</h1>
+          <h2>Llama show you what fashion really is</h2>
+        </div>
+        
+        <div class="navbar">
+          <a href="home?">Home</a>
+          <a href="aboutus?">About Us</a>
+          <a href="downloadcode?">Download the Code</a>
+          <a href="contactus?" class="right">Contact Us</a>
+        </div>
+        
+        <form class="example" action="currenttrends?" method="get" >
+        <div class="row">
+          <div class="main">
+            <h2>CURRENT TRENDS</h2>
+            <br>
+            <br>
+            <h5> Display current trend process and final table here </h5>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+          </div>
+          </form>
+          
+        
+        <div class="footer">
+          <h2>Copyright)</h2>
+          <h5>This belongs to IRG4 and IRG4 only. Don't you dare try stealing it. Mwahaha it's all ours *insert gif of child sticking her tongue out*</h5>
+        </div>
+	</body>
