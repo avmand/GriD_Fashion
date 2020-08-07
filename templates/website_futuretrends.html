@@ -65,14 +65,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  -ms-flex: 50%; /* IE10 */
-  flex: 50%;
-  background-color: #d2e4e4;
-  padding: 20px;
-}
 
 /* Main column */
 .main {   
@@ -82,12 +74,6 @@ body {
   padding: 20px;
 }
 
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
 
 /* Footer */
 .footer {
@@ -114,6 +100,63 @@ body {
 }
 
 
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  background-color: white;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #e4d2d2;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
 </style>
 </head>
 <body>
@@ -136,28 +179,41 @@ body {
           <a href="contactus?" class="right">Contact Us</a>
         </div>
         
-        <form class="example" action="futuretrends?" method="get" >
-        <div class="row">
-          <div class="main">
-            <h2>FUTURE TRENDS</h2>
-            <br>
-            <br>
-            <h5> Display future trend process and final table here </h5>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-          </div>
-          </form>
-          
-        
+        <div class="main">
+            <h2 style="text-align:center">FUTURE TRENDS GENERATED</h2>
+            <div class="row" style="align:center">
+              <div class="column">
+                <div class="card">
+                  <img src="/static/img/download_tshirt.png" alt="TOPTREND1" style="width:50%">
+                  <div class="container">
+                    <h2>{{ top1_name[0] }}</h2>
+                    <p> {{ top1_description[0] }} </p>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="column">
+                <div class="card">
+                  <img src="/static/img/llamaprofile3.png" alt="TOPTREND2" style="width:50%">
+                  <div class="container">
+                    <h2>{{ top1_name[1] }}</h2>
+                    <p> {{ top1_description[1] }} </p>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="column">
+                <div class="card">
+                  <img src="/static/img/llamaprofile3.png" alt="TOPTREND3" style="width:50%">
+                  <div class="container">
+                    <h2>{{ top1_name[2] }}</h2>
+                    <p> {{ top1_description[2] }} </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+        </div>
         <div class="footer">
           <h2>Copyright</h2>
           <h5>This belongs to IRG4 and IRG4 only. Don't you dare try stealing it. Mwahaha it's all ours *insert gif of child sticking her tongue out*</h5>
