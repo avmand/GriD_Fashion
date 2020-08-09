@@ -55,12 +55,13 @@ The concepts and tech stack used here are:
 <br><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/2.png" width=37.5% align="center"><br>
 ### The Modules :beginner:
 Predicting future trends is based on the following pipeline:
-- <b> Webscraper </b>: 
+- <b> Webscraper-1 </b>: 
 A huge majority of future trends are adopted from what clothing items celebrities endorse. We implemented an instagram scraping module in python to get the latest brand endorsements by instagram influencers to use as input for our Trendifying Model stage later on.<br>
  <b>  a. Input: </b>   List of instagram profiles to scrape from <br>
  <b>  b. Output: </b>  Recent fashion endorsment images from user profiles <br>
  <b>  c. Code: </b> <br>
-
+ 
+- <b> Webscraper-2 </b>: 
 We also implemented a google images scraper to scrape images from the internet according to a given query to generate a dataset to train our CNN Classifier. <br>
  <b> a. Input: </b> list of queris of images to scrape <br>
  <b> b. Output: </b> Images <br>
