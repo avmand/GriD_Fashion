@@ -54,6 +54,6 @@ The concepts and tech stack used here are:
 - Convolutional Neural Networks (CNNs)
 - Generative Adversial Networks (GANs)
 - Deep Dream Model
-<br><p align="center"><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/2.png" width=37.5% align="center"></p><br>
+<br><p align="center"><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/Future trends.png" width=37.5% align="center"></p><br>
 ### The Modules :beginner:
 <complete later>
