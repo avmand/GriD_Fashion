@@ -4,7 +4,7 @@ Looking for a solution to predict Fashion Trends and know the Current Trends too
 <br>
   <img src="https://github.com/avmand/GriD_Fashion/blob/master/images/logo2.png" width=12.5%><br>
 ## Use Cases
-Show Fashion Retailers current trends and failures and provide them with an analysis of what is working in the market product wise and reduce manual effort. Help fashion retailers know about possible future trends, and give them more insight into how they are derived product wise.
+Our aim is to show Fashion Retailers current trends and failures and provide them with an analysis of what is working in the market product wise and reduce manual effort. Another aim is to help fashion retailers know about possible future trends, and give them more insight into how they are derived product wise, thus helping them make successful products.
   
 ## Identifying Current Trends
 ### To extract current trends, we make use of e-commerce websites. But why? :iphone:
