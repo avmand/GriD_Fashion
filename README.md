@@ -17,7 +17,7 @@ The dataset consists of data scraped from various e-commerce websites. The detai
 <br><p align="center"><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/dataset.PNG" ></p><br>
 
 ### Judging the Sentiment Attached with Each Product :smile:/:neutral_face:/ :disappointed:
-Here, we make use of the rating, number of people who rated, reviews and number of people who reviewed to understand whether the product is doing well in the market. <a href="https://medium.com/analytics-vidhya/simplifying-social-media-sentiment-analysis-using-vader-in-python-f9e6ec6fc52f">The Vader Polarity Score</a>is a measure of how postive or negative a certain piece of text is. The relation between these aspects would be:<br>
+Here, we make use of the rating, number of people who rated, reviews and number of people who reviewed to understand whether the product is doing well in the market. <a href="https://medium.com/analytics-vidhya/simplifying-social-media-sentiment-analysis-using-vader-in-python-f9e6ec6fc52f">The Vader Polarity Score</a> is a measure of how postive or negative a certain piece of text is. The relation between these aspects would be:<br>
   <p align="center"><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/3.png" width=37.5%></p><br>
 We decided upon this equation because we feel that the positivity score is directly proportional to the above features. We pick the top 5 and bottom 5 products based on their final score. These products are displayed in the current trends section.
   
