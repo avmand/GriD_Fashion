@@ -24,7 +24,7 @@ body {
 .header {
   padding: 80px;
   text-align: center;
-  background-image: url("./static/img/background.png"); 
+  background-image: url("./static/img/unicorn6.png"); 
   color: Black;
   
   
@@ -121,8 +121,15 @@ html {
 
 .column {
   float: left;
-  width: 33.33%;
+  width: 20%;
   margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.columngraph {
+margin:auto;
+  width: 80%;
+  margin-bottom: auto;
   padding: 0 8px;
 }
 
@@ -153,6 +160,12 @@ html {
   color: grey;
 }
 
+.descgraph {
+  color: grey;
+  font: 15px sans-serif;
+  text-align:center;
+  
+}
 
 @media screen and (max-width: 650px) {
   .column {
@@ -165,18 +178,18 @@ html {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 70%;
   padding: 10px;
 }
 .maingraph {   
   -ms-flex: 100%; /* IE10 */
   flex: 100%;
-  background-color: #d2e4e4;
-  height: 550px;
+  background-color: white;
+  height: 650px;
   padding: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 100%;
 }
 
 
@@ -221,8 +234,7 @@ rect.background {
 
 <body>
     	<div class="header">
-          <h1>Fashion Trends</h1>
-          <h2>Llama show you what fashion really is</h2>
+          <h1>Unicorn Fashion Systems</h1>
         </div>
         
         <div class="navbar">
@@ -237,36 +249,60 @@ rect.background {
             <div class="row" style="align:center">
               <div class="column">
                 <div class="card">
-                  <img src="/static/img/download_tshirt.png" alt="TOPTREND1" class="centerimg">
+                  <img src={{ images_path[0] }} alt="TOPTREND1" class="centerimg">
                   <div class="container">
                     <h2>TOP TREND</h2>
                     <p class="title">{{ top1_name[0] }}</p>
-                    <p> {{ top1_description[0] }} </p>
-                    <p> {{ top1_score[0] }} </p>
+                    <a href={{ top1_description[0] }}>Link</a>
+                    <p> Score: {{ top1_score[0] }} </p>
                   </div>
                 </div>
               </div>
             
               <div class="column">
                 <div class="card">
-                  <img src="/static/img/llamaprofile3.png" alt="TOPTREND2" class="centerimg">
+                  <img src={{ images_path[1] }} alt="TOPTREND2" class="centerimg">
                   <div class="container">
                     <h2>TOP TREND</h2>
                     <p class="title">{{ top1_name[1] }}</p>
-                    <p> {{ top1_description[1] }} </p>
-                    <p> {{ top1_score[1] }} </p>
+                    <a href={{ top1_description[1] }}>Link</a>
+                    <p> Score: {{ top1_score[1] }} </p>
+                  </div>
+                </div>
+              </div>
+            
+            <div class="column">
+                <div class="card">
+                  <img src={{ images_path[2] }} alt="TOPTREND3" class="centerimg">
+                  <div class="container">
+                    <h2>TOP TREND</h2>
+                    <p class="title">{{ top1_name[2] }}</p>
+                    <a href={{ top1_description[2] }}>Link</a>
+                    <p> Score: {{ top1_score[2] }} </p>
                   </div>
                 </div>
               </div>
             
               <div class="column">
                 <div class="card">
-                  <img src="/static/img/llamaprofile3.png" alt="TOPTREND3" class="centerimg">
+                  <img src={{ images_path[3] }} alt="TOPTREND4" class="centerimg">
                   <div class="container">
                     <h2>TOP TREND</h2>
-                    <p class="title">{{ top1_name[2] }}</p>
-                    <p> {{ top1_description[2] }} </p>
-                    <p> {{ top1_score[2] }} </p>
+                    <p class="title">{{ top1_name[3] }}</p>
+                    <a href={{ top1_description[3] }}>Link</a>
+                    <p> Score: {{ top1_score[3] }} </p>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="column">
+                <div class="card">
+                  <img src={{ images_path[4] }} alt="TOPTREND5" class="centerimg">
+                  <div class="container">
+                    <h2>TOP TREND</h2>
+                    <p class="title">{{ top1_name[4] }}</p>
+                    <a href={{ top1_description[4] }}>Link</a>
+                    <p> Score: {{ top1_score[4] }} </p>
                   </div>
                 </div>
               </div>
@@ -274,36 +310,60 @@ rect.background {
             <div class="row" style="align:center">
               <div class="column">
                 <div class="card">
-                  <img src="/static/img/llamaprofile3.png" alt="BOTTOMTREND1" class="centerimg">
+                  <img src={{ images_path[5] }} alt="BOTTOMTREND1" class="centerimg">
                   <div class="container">
                     <h2>BOTTOM TREND</h2>
                     <p class="title">{{ bottom1_name[0] }}</p>
-                    <p> {{ bottom1_description[0] }} </p>
-                    <p> {{ bottom1_score[0] }} </p>
+                    <a href={{ bottom1_description[0] }}>Link</a>
+                    <p> Score: {{ bottom1_score[0] }} </p>
                   </div>
                 </div>
               </div>
             
               <div class="column">
                 <div class="card">
-                  <img src="/static/img/llamaprofile3.png" alt="BOTTOMTREND2" class="centerimg">
+                  <img src={{ images_path[6] }} alt="BOTTOMTREND2" class="centerimg">
                   <div class="container">
                     <h2>BOTTOM TREND</h2>
                     <p class="title">{{ bottom1_name[1] }}</p>
-                    <p> {{ bottom1_description[1] }} </p>
-                    <p> {{ bottom1_score[1] }} </p>
+                    <a href={{ bottom1_description[1] }}>Link</a>
+                    <p> Score: {{ bottom1_score[1] }} </p>
                   </div>
                 </div>
               </div>
             
               <div class="column">
                 <div class="card">
-                  <img src="/static/img/llamaprofile3.png" alt="BOTTOMTREND3" class="centerimg">
+                  <img src={{ images_path[7] }} alt="BOTTOMTREND3" class="centerimg">
                   <div class="container">
                     <h2>BOTTOM TREND</h2>
                     <p class="title">{{ bottom1_name[2] }}</p>
-                    <p> {{ bottom1_description[2] }} </p>
-                    <p> {{ bottom1_score[2] }} </p>
+                    <a href={{ bottom1_description[2] }}>Link</a>
+                    <p> Score: {{ bottom1_score[2] }} </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="column">
+                <div class="card">
+                  <img src={{ images_path[8] }} alt="BOTTOMTREND4" class="centerimg">
+                  <div class="container">
+                    <h2>BOTTOM TREND</h2>
+                    <p class="title">{{ bottom1_name[3] }}</p>
+                    <a href={{ bottom1_description[3] }}>Link</a>
+                    <p> Score: {{ bottom1_score[3] }} </p>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="column">
+                <div class="card">
+                  <img src={{ images_path[9] }} alt="BOTTOMTREND5" class="centerimg">
+                  <div class="container">
+                    <h2>BOTTOM TREND</h2>
+                    <p class="title">{{ bottom1_name[4] }}</p>
+                    <a href={{ bottom1_description[4] }}>Link</a>
+                    <p> Score: {{ bottom1_score[4] }} </p>
                   </div>
                 </div>
               </div>
@@ -320,12 +380,21 @@ rect.background {
 <body>
 
 <div class="main" id="graphDiv1" >  
-<div class="maingraph" id="graphDiv" style="">
-<br>
-<br>
-<br>
+<div class="row" style="align:center">
+<div class="columngraph">
+<div class="card" >
+<div class="maingraph" id="graphDiv" style="align:center;">
+<h2 style="text-align:center">CURRENT TRENDS : FEATURES</h2>
+<p class="descgraph">Click on the name/bar to see its details.</p>
+<p class="descgraph">Click anywhere inside the box to return to the previous graph.</p>
 <br>
 </div>
+<br>
+</div>
+</div>
+</div>
+<br>
+<br>
 </div>
 
 
@@ -333,12 +402,13 @@ rect.background {
     
 <script >
 (function svg1(){
-    var margin = {top: 20, right: 120, bottom: 0, left: 120},
-    width = 825 - margin.left - margin.right,
+    var margin = {top: 20, right: 40, bottom: 0, left: 200},
+    width = 900 - margin.left - margin.right,
     height = 390 - margin.top - margin.bottom;
-
+    
 var x = d3.scale.linear()
     .range([0, width]);
+    
 
 var barHeight = 20;
 
@@ -373,6 +443,7 @@ svg1.append("button")
     .attr("x", 2)
     .attr("y", 300)
     .text("Click here")
+    .style("font-size", "15px")
     .on("click", up);
 //kbn
 svg1.append("g")
@@ -381,7 +452,7 @@ svg1.append("g")
 svg1.append("g")
     .attr("class", "y axis")
   .append("line")
-    .attr("y1", "100%");
+    .attr("y1", "100%")
 
 
 d3.json("/currenttrendsget-data", function(error, root) {
@@ -409,7 +480,8 @@ function down(d, i) {
   // Per above, entering bars are immediately visible.
   var enter = bar(d)
       .attr("transform", stack(i))
-      .style("opacity", 1);
+      .style("opacity", 1)
+      .style("font-size", "15px");
 
   // Have the text fade-in, even though the bars are visible.
   // Color the bars as parents; they will fade to children if appropriate.
@@ -423,6 +495,7 @@ function down(d, i) {
   //kbn
   svg1.selectAll(".x.axis").transition()
       .duration(duration)
+      .style("font-size", "15px")
       .call(xAxis);
 
   // Transition entering bars to their new position.
@@ -433,12 +506,14 @@ function down(d, i) {
 
   // Transition entering text.
   enterTransition.select("text")
-      .style("fill-opacity", 1);
+      .style("fill-opacity", 1)
+      .style("font-size", "15px");
 
   // Transition entering rects to the new x-scale.
   enterTransition.select("rect")
       .attr("width", function(d) { return x(d.value); })
       .style("fill", function(d) { return color(!!d.children); });
+
 
   // Transition exiting bars to fade out.
   var exitTransition = exit.transition()
@@ -488,6 +563,7 @@ function up(d) {
   //kbn
   svg1.selectAll(".x.axis").transition()
       .duration(duration)
+      .style("font-size", "15px")
       .call(xAxis);
 
   // Transition entering bars to fade in over the full duration.
@@ -509,7 +585,8 @@ function up(d) {
 
   // Transition exiting text to fade out.
   exitTransition.select("text")
-      .style("fill-opacity", 1e-6);
+      .style("fill-opacity", 1e-6)
+      .style("font-size", "15px");
 
   // Transition exiting rects to the new scale and fade to parent color.
   exitTransition.select("rect")
@@ -537,6 +614,7 @@ function bar(d) {
       .attr("transform", "translate(0,5)")
     .selectAll("g")
       .data(d.children)
+      .style("font-size", "15px")
     .enter().append("g")
       .style("cursor", function(d) { return !d.children ? null : "pointer"; })
       .on("click", down);
@@ -546,11 +624,13 @@ function bar(d) {
       .attr("y", barHeight / 2)
       .attr("dy", ".35em")
       .style("text-anchor", "end")
+      .style("font-size", "15px")
       .text(function(d) { return d.name; });
 
   bar.append("rect")
       .attr("width", function(d) { return x(d.value); })
-      .attr("height", barHeight);
+      .attr("height", barHeight)
+      .style("font-size", "15px");
 
   return bar;
 }
@@ -571,7 +651,7 @@ function stack(i) {
 <body>
 <div class="footer">
           <h2>Copyright</h2>
-          <h5>This belongs to IRG4 and IRG4 only. Don't you dare try stealing it. Mwahaha it's all ours *insert gif of child sticking her tongue out*</h5>
+          <h5>This belongs to IRG4 and IRG4 only. </h5>
 </div>
 </body>
 </html>

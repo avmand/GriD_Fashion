@@ -19,7 +19,7 @@ body {
 .header {
   padding: 80px;
   text-align: center;
-  background-image: url("./static/img/background.png"); 
+  background-image: url("./static/img/unicorn6.png"); 
   color: Black;
   
   
@@ -75,6 +75,7 @@ body {
 }
 
 
+
 /* Footer */
 .footer {
 -ms-flex: 100%; /* IE10 */
@@ -116,8 +117,15 @@ html {
 
 .column {
   float: left;
-  width: 33.33%;
+  width: 20%;
   margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.columngraph {
+margin:auto;
+  width: 65%;
+  margin-bottom: auto;
   padding: 0 8px;
 }
 
@@ -156,20 +164,67 @@ html {
   }
 }
 
+.centerimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 10px;
+}
+.maingraph {   
+  -ms-flex: 100%; /* IE10 */
+  flex: 100%;
+  background-color: white;
+  height: 550px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+
+
+
+
+text {
+  font: 10px sans-serif;
+}
+
+button{
+  font: 10px sans-serif;
+    
+}
+
+rect.background {
+  fill: white;
+  stroke: #646464;
+  stroke-width: 1px;
+  stroke-dasharray: 2,2;
+  stroke-linejoin: round;
+}
+
+.axis {
+  shape-rendering: crispEdges;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+}
+
+.left-div {
+  float:left;
+  height: 550px;
+  width: 820px;
+  
+}
 
 </style>
-</head>
+
 <body>
-
-
-
-</body>
-</html>
-
-	<body>
     	<div class="header">
-          <h1>Fashion Trends</h1>
-          <h2>Llama show you what fashion really is</h2>
+          <h1>Unicorn Fashion Systems</h1>
         </div>
         
         <div class="navbar">
@@ -180,42 +235,88 @@ html {
         </div>
         
         <div class="main">
-            <h2 style="text-align:center">FUTURE TRENDS GENERATED</h2>
+            <h2 style="text-align:center">GENERATED FUTURE TRENDS</h2>
+            <h5 style="text-align:center">Refresh to load more generated trends!</h5>
             <div class="row" style="align:center">
               <div class="column">
                 <div class="card">
-                  <img src="/static/img/download_tshirt.png" alt="TOPTREND1" style="width:50%">
+                  <img src={{ images_path[0] }} alt="TOPTREND1" class="centerimg">
                   <div class="container">
-                    <h2>{{ top1_name[0] }}</h2>
-                    <p> {{ top1_description[0] }} </p>
                   </div>
                 </div>
               </div>
             
               <div class="column">
                 <div class="card">
-                  <img src="/static/img/llamaprofile3.png" alt="TOPTREND2" style="width:50%">
+                  <img src={{ images_path[1] }} alt="TOPTREND1" class="centerimg">
                   <div class="container">
-                    <h2>{{ top1_name[1] }}</h2>
-                    <p> {{ top1_description[1] }} </p>
                   </div>
                 </div>
               </div>
-            
               <div class="column">
                 <div class="card">
-                  <img src="/static/img/llamaprofile3.png" alt="TOPTREND3" style="width:50%">
+                  <img src={{ images_path[2] }} alt="TOPTREND1" class="centerimg">
                   <div class="container">
-                    <h2>{{ top1_name[2] }}</h2>
-                    <p> {{ top1_description[2] }} </p>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                  <img src={{ images_path[3] }} alt="TOPTREND1" class="centerimg">
+                  <div class="container">
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                  <img src={{ images_path[4] }} alt="TOPTREND1" class="centerimg">
+                  <div class="container">
                   </div>
                 </div>
               </div>
             </div>
+            <div class="row" style="align:center">
+              <div class="column">
+                <div class="card">
+                  <img src={{ images_path[5] }} alt="TOPTREND1" class="centerimg">
+                  <div class="container">
+                  </div>
+                </div>
+              </div>
             
+              <div class="column">
+                <div class="card">
+                  <img src={{ images_path[6] }} alt="TOPTREND1" class="centerimg">
+                  <div class="container">
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                  <img src={{ images_path[7] }} alt="TOPTREND1" class="centerimg">
+                  <div class="container">
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                  <img src={{ images_path[8] }} alt="TOPTREND1" class="centerimg">
+                  <div class="container">
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                  <img src={{ images_path[9] }} alt="TOPTREND1" class="centerimg">
+                  <div class="container">
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
+        
         <div class="footer">
           <h2>Copyright</h2>
-          <h5>This belongs to IRG4 and IRG4 only. Don't you dare try stealing it. Mwahaha it's all ours *insert gif of child sticking her tongue out*</h5>
-        </div>
+          <h5>This belongs to IRG4 and IRG4 only. </h5>
+</div>
 	</body>
