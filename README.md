@@ -18,13 +18,13 @@ The dataset consists of data scraped from various e-commerce websites. The detai
 
 ### Judging the Sentiment Attached with Each Product :smile:/:neutral_face:/ :disappointed:
 Here, we make use of the rating, number of people who rated, reviews and number of people who reviewed to understand whether the product is doing well in the market. The Vader Polarity Score <MIT link> is a measure of how postive or negative a certain piece of text is. The relation between these aspects would be:<br>
-  <img src="https://github.com/avmand/GriD_Fashion/blob/master/images/3.png" width=37.5%><br>
+  <p align="center"><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/3.png" width=37.5%></p><br>
 We decided upon this equation because we feel that the positivity score is directly proportional to the above features. We pick the top 5 and bottom 5 products based on their final score. These products are displayed in the current trends section.
   
 ### The Leaderboard :bar_chart:
 The leaderboard displays the features of the clothing item that are trending. For example, the neckline, prints, colours, fit of tshirts, dresses and skirts. This can be extended to any article of clothing since it is extracted from the product description obtained from the e-commerce website.
 Mostly, each site follows its own naming convention and the features can be extracted using this convention. If not, we use bigram analysis to figure out these trends after removing stop-words and punctuations. 
-<br><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/4.png" width=37.5%><br>
+<br><p align="center"><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/4.png" width=37.5%></p><br>
  
 
   
@@ -35,7 +35,7 @@ The concepts and tech stack used here are:
   a. Sentiment Analysis<br>
   b. Bigram Analysis
 - Data Visualizations (Flask APIs, d3.js)
-<br><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/1.png" width=37.5%><br>
+<br><p align="center"><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/1.png" width=37.5%></p><br>
 
 ### The Modules :beginner:
 <complete later>
@@ -54,7 +54,7 @@ The concepts and tech stack used here are:
 - Convolutional Neural Networks (CNNs)
 - Generative Adversial Networks (GANs)
 - Trendifying Model (based on DeepDream)
-<br><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/2.png" width=37.5% align="center"><br>
+<br><p align="center"><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/2.png" width=37.5% align="center"></p><br>
 ### The Modules :beginner:
 Predicting future trends is based on the following pipeline:
 - <b> Webscraper-1 </b>: 
