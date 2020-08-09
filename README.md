@@ -13,7 +13,9 @@ Show Fashion Retailers current trends and failures and provide them with an anal
 E-commerce websites like Flipkart, Myntra, Nordstorm etc. give a good representation of what people are liking and buying online. The reviews, rating, number of rating, number of reviews give a good impression of what today's trends are. It gives an indirect representation of how a product is doing in the market. A good product would have more positive reviews and higher ratings. This would show that the particular product has features that are being liked by the audience. We can use the images provided by the e-commerce websites to come up with a mood board which showcases what is trending and what is not!
 
 ### The Dataset  :page_facing_up:
-The dataset consists of data scraped from various e-commerce websites. The details scraped are shown here. <image>  
+The dataset consists of data scraped from various e-commerce websites. The details scraped are shown here. 
+<br>
+  <p align="center"><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/dataset.png"></p><br>
   
 
 ### Judging the Sentiment Attached with Each Product :smile:/:neutral_face:/ :disappointed:
@@ -54,7 +56,7 @@ The concepts and tech stack used here are:
 - Convolutional Neural Networks (CNNs)
 - Generative Adversial Networks (GANs)
 - Trendifying Model (based on DeepDream)
-<br><p align="center"><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/2.png" width=37.5% align="center"></p><br>
+<br><p align="center"><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/Future trends.png" width=37.5% align="center"></p><br>
 ### The Modules :beginner:
 Predicting future trends is based on the following pipeline:
 - <b> Webscraper-1 </b>: 
