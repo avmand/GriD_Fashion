@@ -22,8 +22,7 @@ We decided upon this equation because we feel that the positivity score is direc
 ### The Leaderboard :bar_chart:
 The leaderboard displays the features of the clothing item that are trending. For example, the neckline, prints, colours, fit of tshirts, dresses and skirts. This can be extended to any article of clothing since it is extracted from the product description obtained from the e-commerce website.
 Mostly, each site follows its own naming convention and the features can be extracted using this convention. If not, we use bigram analysis to figure out these trends after removing stop-words and punctuations. 
-<br>
-  <img src="https://github.com/avmand/GriD_Fashion/blob/master/images/4.png" width=37.5%><br>
+<br><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/4.png" width=37.5%><br>
  
 
   
