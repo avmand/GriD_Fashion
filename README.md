@@ -2,29 +2,27 @@
 ## Fashion Intelligence Systems :tshirt:
 Looking for a solution to predict Fashion Trends and know the Current Trends too? Presenting Unicorn Fashion Systems :unicorn:, a one-stop-shop solution for all the designers out there. You can see numerous current trends and even predict the upcoming trends. No need to browse through multiple fashion sites, e-commerce websites, inspiration boards to know what people are liking. Let Unicorn Fashion Systems :unicorn: do it for you!
 <br>
-<p align="center">  <img src="https://github.com/avmand/GriD_Fashion/blob/master/images/logo2.png" width=12.5% ></p><br>
-
-
+  <center><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/logo2.png" width=12.5%><br>
 ## Use Cases
-Our aim is to show Fashion Retailers current trends and failures and provide them with an analysis of what is working in the market product wise and reduce manual effort. Another aim is to help fashion retailers know about possible future trends, and give them more insight into how they are derived product wise, thus helping them make successful products.
+Show Fashion Retailers current trends and failures and provide them with an analysis of what is working in the market product wise and reduce manual effort. Help fashion retailers know about possible future trends, and give them more insight into how they are derived product wise.
   
 ## Identifying Current Trends
 ### To extract current trends, we make use of e-commerce websites. But why? :iphone:
-E-commerce websites like <a href="https://www.flipkart.com/">Flipkart</a>, Myntra, Nordstorm etc. give a good representation of what people are liking and buying online. The reviews, rating, number of rating, number of reviews give a good impression of what today's trends are. It gives an indirect representation of how a product is doing in the market. A good product would have more positive reviews and higher ratings showing that the particular product has features that are being liked by the audience. We can use the images provided by the e-commerce websites to come up with a mood board which showcases what is trending and what is not!
+E-commerce websites like Flipkart, Myntra, Nordstorm etc. give a good representation of what people are liking and buying online. The reviews, rating, number of rating, number of reviews give a good impression of what today's trends are. It gives an indirect representation of how a product is doing in the market. A good product would have more positive reviews and higher ratings. This would show that the particular product has features that are being liked by the audience. We can use the images provided by the e-commerce websites to come up with a mood board which showcases what is trending and what is not!
 
 ### The Dataset  :page_facing_up:
-The dataset consists of data scraped from various e-commerce websites. The details scraped are shown here.   
-<br><p align="center"><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/dataset.PNG" ></p><br>
+The dataset consists of data scraped from various e-commerce websites. The details scraped are shown here. <image>  
+  
 
 ### Judging the Sentiment Attached with Each Product :smile:/:neutral_face:/ :disappointed:
-Here, we make use of the rating, number of people who rated, reviews and number of people who reviewed to understand whether the product is doing well in the market. <a href="https://medium.com/analytics-vidhya/simplifying-social-media-sentiment-analysis-using-vader-in-python-f9e6ec6fc52f">The Vader Polarity Score</a> is a measure of how postive or negative a certain piece of text is. The relation between these aspects would be:<br>
-  <p align="center"><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/3.png" width=37.5%></p><br>
+Here, we make use of the rating, number of people who rated, reviews and number of people who reviewed to understand whether the product is doing well in the market. The Vader Polarity Score <MIT link> is a measure of how postive or negative a certain piece of text is. The relation between these aspects would be:<br>
+  <img src="https://github.com/avmand/GriD_Fashion/blob/master/images/3.png" width=37.5%><br>
 We decided upon this equation because we feel that the positivity score is directly proportional to the above features. We pick the top 5 and bottom 5 products based on their final score. These products are displayed in the current trends section.
   
 ### The Leaderboard :bar_chart:
 The leaderboard displays the features of the clothing item that are trending. For example, the neckline, prints, colours, fit of tshirts, dresses and skirts. This can be extended to any article of clothing since it is extracted from the product description obtained from the e-commerce website.
 Mostly, each site follows its own naming convention and the features can be extracted using this convention. If not, we use bigram analysis to figure out these trends after removing stop-words and punctuations. 
-<br><p align="center"><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/4.png" width=37.5%></p><br>
+<br><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/4.png" width=37.5%><br>
  
 
   
@@ -35,7 +33,7 @@ The concepts and tech stack used here are:
   a. Sentiment Analysis<br>
   b. Bigram Analysis
 - Data Visualizations (Flask APIs, d3.js)
-<br><p align="center"><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/1.png" width=37.5%></p><br>
+<br><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/1.png" width=37.5%><br>
 
 ### The Modules :beginner:
 <complete later>
@@ -53,7 +51,31 @@ The concepts and tech stack used here are:
 - Web scraping (Python)
 - Convolutional Neural Networks (CNNs)
 - Generative Adversial Networks (GANs)
-- Deep Dream Model
-<br><p align="center"><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/Future trends.png" width=37.5% align="center"></p><br>
+- Trendifying Model (based on DeepDream)
+<br><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/2.png" width=37.5% align="center"><br>
 ### The Modules :beginner:
-<complete later>
+Predicting future trends is based on the following pipeline:
+- Webscraper: 
+A huge majority of future trends are adopted from what clothing items celebrities endorse. We implemented an instagram scraping module in python to get the latest brand endorsements by instagram influencers to use as input for our Trendifying Model stage later on.<br>
+  a. Input: list of instagram profiles to scrape from
+  b. Output: Recent fashion endorsment images from user profiles
+  c. Code: 
+
+We also implemented a google images scraper to scrape images from the internet according to a given query to generate a dataset to train our CNN Classifier.
+  a. Input: list of queris of images to scrape
+  b. Output: Images
+  c. Code: GriD_Fashion/FutureTrends/GoogleImagesScraper/scrapeImages.py 
+  
+- CNNs:
+
+- GANS:
+Generative Adversial Networks consist of 2 neural network models: the generator (which learns to generate images) and the discriminator (which learns to discriminate between a real image and a fake one). The Fashion GAN we implemented learns from a dataset of trendy images(tshirts, skirts and dresses) and generates its own image with a minimum discriminator loss of 0.084. The Generator GAN and the discriminator GAN is made of 7 layers and 6 layers with a leaky RELU activation (to avoid the vanishing gradient descent problem).
+  a. Input: Subset of Myntra Dataset: Tshirts (500), Dresses (434), Skirts (128) to train
+  b. Output: Images generated by the model as a prediction of future trends (Present in static/img/{dress_images, skirt_images, tshirt_images}
+  c. Code: FutureTrends/fashion_gan.py which uses numpy files for training dataset (resized from original dataset). Numpy Files are present in FutureTrends folder.
+
+-Trendifying Model:
+GANs, though quite accurate and state of the art, are constrained due to the heavy computation power required and large dataset requirements. To get a closer look into how a neural network looks at a dataset of trendy images, we adopted the DeepDream model to trendify certain images. The DeepDream concept increases activations of certain layers so that it exemplifies the features that the certain layer uses to calculate outputs. We adopted the pretrained VGG16 image classifier for this purpose and chose the layer that we thought influenced trend the most by experimentation. 
+  a. Input: An image which depicts a future trend.
+  b. Output: A trendified image
+  c. Code: FutureTrends/Trendified.py (Pls change the address of the image you want to use in the code before running)
