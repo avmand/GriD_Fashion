@@ -156,7 +156,7 @@ Generative Adversial Networks consist of 2 neural network models: the generator 
 <b>  c. Code: </b>   FutureTrends/fashion_gan.py which uses numpy files for training dataset (resized from original dataset). Numpy Files are present in FutureTrends folder <br>
 
 - <b>Trendifying Model</b>:
-GANs, though quite accurate and state of the art, are constrained due to the heavy computation power required and large dataset requirements. To get a closer look into how a neural network looks at a dataset of trendy images, we adopted the DeepDream model to trendify certain images. The DeepDream concept increases activations of certain layers so that it exemplifies the features that the certain layer uses to calculate outputs. We adopted the pretrained VGG16 image classifier for this purpose and chose the layer that we thought influenced trend the most by experimentation. <br>
+The Trendifying Model creates the inspiration board.GANs, though quite accurate and state of the art, are constrained due to the heavy computation power required and large dataset requirements. To get a closer look into how a neural network looks at a dataset of trendy images, we adopted the DeepDream model to trendify certain images. The DeepDream concept increases activations of certain layers so that it exemplifies the features that the certain layer uses to calculate outputs. We adopted the pretrained VGG16 image classifier for this purpose and chose the layer that we thought influenced trend the most by experimentation. <br>
  <b> a. Input:</b> An image which depicts a future trend. <br>
  <b> b. Output:</b> A trendified image <br>
  <b> c. Code:</b> FutureTrends/Trendified.py (Pls change the address of the image you want to use in the code before running)<br>
