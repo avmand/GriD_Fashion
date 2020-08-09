@@ -359,8 +359,14 @@ def api_futuretrends():
         images_path=[]
         for i in range(0,len(imgs_id)):
             images_path.append(imagestshirts[imgs_id[i]])
+            
+
+        imagestshirts2 = glob.glob('static/img/content/outputs/output_shirt-' + '*.*')
+        images_path_insp=[]
+        for i in range(0,len(imagestshirts2)):
+            images_path_insp.append(imagestshirts2[i])
 #        print(images_path)
-        return render_template("website_futuretrends.html",images_path=images_path,top1_name=top1_name,top1_description=top1_description)
+        return render_template("website_futuretrends.html",images_path_insp=images_path_insp,images_path=images_path,top1_name=top1_name,top1_description=top1_description)
     
     if 'dresses' in request.args:
 #        Insert code here/ information to retrieve
@@ -374,7 +380,13 @@ def api_futuretrends():
         images_path=[]
         for i in range(0,len(imgs_id)):
             images_path.append(imagesdresses[imgs_id[i]])
-        return render_template("website_futuretrends.html",images_path=images_path,top1_name=top1_name,top1_description=top1_description)
+            
+        imagestshirts2 = glob.glob('static/img/content/outputs/output_dress-' + '*.*')
+        images_path_insp=[]
+        for i in range(0,len(imagestshirts2)):
+            images_path_insp.append(imagestshirts2[i])
+#        print(images_path)
+        return render_template("website_futuretrends.html",images_path_insp=images_path_insp,images_path=images_path,top1_name=top1_name,top1_description=top1_description)
     
     if 'skirts' in request.args:
 #        Insert code here/ information to retrieve
@@ -388,7 +400,13 @@ def api_futuretrends():
         images_path=[]
         for i in range(0,len(imgs_id)):
             images_path.append(imagesskirts[imgs_id[i]])
-        return render_template("website_futuretrends.html",images_path=images_path,top1_name=top1_name,top1_description=top1_description)
+            
+        imagestshirts2 = glob.glob('static/img/content/outputs/output_skirt-' + '*.*')
+        images_path_insp=[]
+        for i in range(0,len(imagestshirts2)):
+            images_path_insp.append(imagestshirts2[i])
+#        print(images_path)
+        return render_template("website_futuretrends.html",images_path_insp=images_path_insp,images_path=images_path,top1_name=top1_name,top1_description=top1_description)
     
     
     
