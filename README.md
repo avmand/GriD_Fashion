@@ -42,84 +42,74 @@ The concepts and tech stack used here are:
 ### The Modules :beginner:
 Identifying current trends is based on the following pipeline:
 - Scraping Reviews, Ratings and Images
-
-We used BeautifulSoup to extract links from the specific category's page. After that, features such as brands, item descriptions, ratings and reviews were extracted from each of the extracted URLs.
-
-<b>   a. Input: </b> Input: URL for the required category from any e-commerce website.</br>
-<b>   b. Output: </b> A csv file with the extracted details. </br>
-	 tshirt-flipkart-final-final.csv </br>
-	 dress-flipkart-final-final.csv </br>
-	 skirt-flipkart-final-final.csv </br>
+We used BeautifulSoup to extract links from the specific category's page. After that, features such as brands, item descriptions, ratings and reviews were extracted from each of the extracted URLs.</br>
+<b>a. Input: </b> Input: URL for the required category from any e-commerce website.</br>
+<b>b. Output: </b> A csv file with the extracted details. </br>
+	 -tshirt-flipkart-final-final.csv </br>
+	 -dress-flipkart-final-final.csv </br>
+	 -skirt-flipkart-final-final.csv </br>
 <b>   c. Code: </b> Review-scrape.py 
 
 - Scoring Products
-
-The Vader Polarity Score was used to measure the sentiment of buyers towards the given product. After that, the final score was calculated using the Vader Score and the average rating of a particular product.
-
+The Vader Polarity Score was used to measure the sentiment of buyers towards the given product. After that, the final score was calculated using the Vader Score and the average rating of a particular product.</br>
 <b> a. Input: </b> The CSV files from the previous module</br>
-	tshirt-flipkart-final-final.csv </br>
-	dress-flipkart-final-final.csv </br>
-	skirt-flipkart-final-final.csv </br>
+	-tshirt-flipkart-final-final.csv </br>
+	-dress-flipkart-final-final.csv </br>
+	-skirt-flipkart-final-final.csv </br>
 <b> b. Output: </b> CSV files with the each product and its final score.</br>
-	 tshirts_csv_final.csv </br>
-	 dress_csv_final.csv </br>
-	 skirt_csv_final.csv  </br>
+	 -tshirts_csv_final.csv </br>
+	 -dress_csv_final.csv </br>
+	 -skirt_csv_final.csv  </br>
 <b> c. Code: </b> 
-	 tshirts_current_trends.ipynb </br>
-	 dresses_current_trends.ipynb </br>
-	 skirts_current_trends.ipynb </br>
+	 -tshirts_current_trends.ipynb </br>
+	 -dresses_current_trends.ipynb </br>
+	 -skirts_current_trends.ipynb </br>
 
 - Ranking Products
-
 This module utilizes Bigram Analysis to rank products. From the description of the products, we removed stopwords (such as Tshirt, Men's, etc). After creating a list of bigrams, they are ranked according to their frequency. After that, we collect the top five and bottom five bigrams.
-<br/> For tshirts, we took into account the neck pattern, colour and print.
- 
-<b> a. Input: </b> The CSV files with the each product and its final score.</br>
-	tshirts_csv_final.csv </br>
-	 dress_csv_final.csv </br>
-	 skirt_csv_final.csv </br>
+<br/> For tshirts, we took into account the neck pattern, colour and print.</br>
+ <b> a. Input: </b> The CSV files with the each product and its final score.</br>
+	-tshirts_csv_final.csv </br>
+	 -dress_csv_final.csv </br>
+	 -skirt_csv_final.csv </br>
 <b> b. Output: </b> CSV files with the top and bottom five products and their IDs.</br>
-	 tshirts/colour_top_bottom.csv </br>
-	 tshirts/neck_top_bottom.csv </br>
-	 tshirts/print_top_bottom.csv </br>
-	 dresses/top_bottom.csv </br>
-	 skirts/top_bottom.csv 	  </br>
+	 -tshirts/colour_top_bottom.csv </br>
+	 -tshirts/neck_top_bottom.csv </br>
+	 -tshirts/print_top_bottom.csv </br>
+	 -dresses/top_bottom.csv </br>
+	 -skirts/top_bottom.csv 	  </br>
 <b> c. Code: </b>
-	 tshirts_current_trends.ipynb </br>
-	 dresses_current_trends.ipynb </br>
-	 skirts_current_trends.ipynb </br>
+	 -tshirts_current_trends.ipynb </br>
+	 -dresses_current_trends.ipynb </br>
+	 -skirts_current_trends.ipynb </br>
 
 - Currently Trending Leaderboard
-
-After extracting the rows in which the top and bottom bigrams appear in, we create a CSV file with the bigram, the ratings of all the products in which the bigram occurs, the bigram itself and the count of each of these.
-
+After extracting the rows in which the top and bottom bigrams appear in, we create a CSV file with the bigram, the ratings of all the products in which the bigram occurs, the bigram itself and the count of each of these.</br>
 <b> a. Input: </b> CSV files with the top and bottom five products and their IDs.</br>
-	 tshirts/colour_top_bottom.csv </br>
-	 tshirts/neck_top_bottom.csv </br>
-	 tshirts/print_top_bottom.csv </br>
-	 dresses/top_bottom.csv </br>
-	 skirts/top_bottom.csv </br>
+	 -tshirts/colour_top_bottom.csv </br>
+	 -tshirts/neck_top_bottom.csv </br>
+	 -tshirts/print_top_bottom.csv </br>
+	 -dresses/top_bottom.csv </br>
+	 -skirts/top_bottom.csv </br>
 <b> b. Output: </b> The data required for the leaderboard.</br>
-	 tshirt_colour_top_bottom.csv </br>
-	 tshirt_neck_top_bottom.csv </br>
-	 tshirt_print_top_bottom.csv </br>
-	 dress_top_bottom.csv </br>
-	 skirt_top_bottom.csv </br>
+	 -tshirt_colour_top_bottom.csv </br>
+	 -tshirt_neck_top_bottom.csv </br>
+	 -tshirt_print_top_bottom.csv </br>
+	 -dress_top_bottom.csv </br>
+	 -skirt_top_bottom.csv </br>
 <b> c. Code: </b> 
-	 tshirts_graph.py </br>
-	 dress_graph.py </br>
-	 skirts_graph.py 
+	 -tshirts_graph.py </br>
+	 -dress_graph.py </br>
+	 -skirts_graph.py 
 
 - Current Trends UI
-
-The top and bottom five products are displayed. An interactive bar graph representing the top and bottom five bigrams and their rating is there as well.
-
+The top and bottom five products are displayed. An interactive bar graph representing the top and bottom five bigrams and their rating is there as well.</br>
 <b> a. Input: </b> The data required for the leaderboard.</br>
-	 tshirt_colour_top_bottom.csv </br>
-	 tshirt_neck_top_bottom.csv </br>
-	 tshirt_print_top_bottom.csv </br>
-	 dress_top_bottom.csv </br>
-	 skirt_top_bottom.csv </br>
+	 -tshirt_colour_top_bottom.csv </br>
+	 -tshirt_neck_top_bottom.csv </br>
+	 -tshirt_print_top_bottom.csv </br>
+	 -dress_top_bottom.csv </br>
+	 -skirt_top_bottom.csv </br>
 <b> b. Output: </b> HTML site using a local host </br>
 <b> c. Code: </b> MainUI.py </br>
  	 To run it, follow the instructions given <a href="https://timmyreilly.azurewebsites.net/python-flask-windows-development-environment-setup/">here</a> to set up a virtual environment for Flask. Then execute your code using 'python3 MainUI.py' and navigate to your local host address (127.0.0.1:5000).
