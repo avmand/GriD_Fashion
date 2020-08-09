@@ -1,8 +1,8 @@
 # Flipkart Grid Software Development Challenge 2.0
-## Fashion Intelligence System
-Looking for a solution to predict Fashion Trends and know the Current Trends too? Presenting Llama Fashions Systems, a one-stop-shop solution for all the designers out there. You can see numerous current trends and even predict the upcoming trends. No need to browse through multiple fashion sites, e-commerce websites, inspiration boards to know what people are liking. Let Llama Fashion do it for you!
+## Fashion Intelligence Systems
+Looking for a solution to predict Fashion Trends and know the Current Trends too? Presenting Unicorn Fashions Systems, a one-stop-shop solution for all the designers out there. You can see numerous current trends and even predict the upcoming trends. No need to browse through multiple fashion sites, e-commerce websites, inspiration boards to know what people are liking. Let Unicorn Fashion do it for you!
 ## Use Cases
-<complete later>
+Show Fashion Retailers current trends and failures and provide them with an analysis of what is working in the market product wise and reduce manual effort. Help fashion retailers know about possible future trends, and give them more insight into how they are derived product wise.
   
 ## Identifying Current Trends
 ### To extract current trends, we make use of e-commerce websites. But why?
