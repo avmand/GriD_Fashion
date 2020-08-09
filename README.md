@@ -2,7 +2,7 @@
 ## Fashion Intelligence Systems :tshirt:
 Looking for a solution to predict Fashion Trends and know the Current Trends too? Presenting Unicorn Fashion Systems :unicorn:, a one-stop-shop solution for all the designers out there. You can see numerous current trends and even predict the upcoming trends. No need to browse through multiple fashion sites, e-commerce websites, inspiration boards to know what people are liking. Let Unicorn Fashion Systems :unicorn: do it for you!
 <br>
-  <img src="https://github.com/avmand/GriD_Fashion/blob/master/images/logo2.png" width=12.5%><br>
+  <img src="https://github.com/avmand/GriD_Fashion/blob/master/images/logo2.png" width=12.5% ><br>
 ## Use Cases
 Our aim is to show Fashion Retailers current trends and failures and provide them with an analysis of what is working in the market product wise and reduce manual effort. Another aim is to help fashion retailers know about possible future trends, and give them more insight into how they are derived product wise, thus helping them make successful products.
   
@@ -11,8 +11,8 @@ Our aim is to show Fashion Retailers current trends and failures and provide the
 E-commerce websites like Flipkart, Myntra, Nordstorm etc. give a good representation of what people are liking and buying online. The reviews, rating, number of rating, number of reviews give a good impression of what today's trends are. It gives an indirect representation of how a product is doing in the market. A good product would have more positive reviews and higher ratings showing that the particular product has features that are being liked by the audience. We can use the images provided by the e-commerce websites to come up with a mood board which showcases what is trending and what is not!
 
 ### The Dataset  :page_facing_up:
-The dataset consists of data scraped from various e-commerce websites. The details scraped are shown here. <image>  
-  
+The dataset consists of data scraped from various e-commerce websites. The details scraped are shown here.   
+<br><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/dataset.PNG" ><br>
 
 ### Judging the Sentiment Attached with Each Product :smile:/:neutral_face:/ :disappointed:
 Here, we make use of the rating, number of people who rated, reviews and number of people who reviewed to understand whether the product is doing well in the market. The Vader Polarity Score <MIT link> is a measure of how postive or negative a certain piece of text is. The relation between these aspects would be:<br>
