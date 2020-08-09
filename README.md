@@ -44,7 +44,7 @@ The concepts and tech stack used here are:
 ### The Dataset :page_facing_up:
 Future trends are guided by what celebrities wear, what is shown in high-end magazines like Vogue and what is being shown in fashion blogs like Fashion Vignette. The trends guided by celebrities can be obtained using their Instagram<image> handles and similarly, scraping blogs and online magazines. We believe that celebrities have the power to influence the fashion trends of the future. <example> We scrape only images of these sources and use them to predict the future trends.
 
-### Deep Learning
+### Deep Learning :snake:
 We make use of the Convolutional Neural Networks (CNNs) to extract the different clothing items worn by the person in the image. We then split it into its categories accordingly. After that, we use Generative Adversial Networks (GANs) to envision the future trends in that category. We also use the Deep Dream Model to make inspiration boards for future trends. 
 
 ### Concepts and Tech Stack Used :computer:
