@@ -15,7 +15,7 @@ E-commerce websites like Flipkart, Myntra, Nordstorm etc. give a good representa
 ### The Dataset  :page_facing_up:
 The dataset consists of data scraped from various e-commerce websites. The details scraped are shown here. 
 <br>
-  <p align="center"><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/dataset.png"></p><br>
+  <p align="center"><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/dataset.PNG"></p><br>
   
 
 ### Judging the Sentiment Attached with Each Product :smile:/:neutral_face:/ :disappointed:
