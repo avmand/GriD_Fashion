@@ -444,6 +444,6 @@ def test_single_image(path):
     print("ID: {}, Label: {}".format(class_predicted[0], inv_map[class_predicted[0]]))  
     return load_img(path)
 
-#test_my_image_path = '/content/large_2019_04_03_Ella_Chynna_FeverFish15102.jpg'
+test_my_image_path = 'testimage.jpg'
 
 test_single_image(test_my_image_path)
