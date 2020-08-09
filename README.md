@@ -2,7 +2,7 @@
 ## Fashion Intelligence Systems :tshirt:
 Looking for a solution to predict Fashion Trends and know the Current Trends too? Presenting Unicorn Fashion Systems :unicorn:, a one-stop-shop solution for all the designers out there. You can see numerous current trends and even predict the upcoming trends. No need to browse through multiple fashion sites, e-commerce websites, inspiration boards to know what people are liking. Let Unicorn Fashion Systems :unicorn: do it for you!
 <br>
-  <img src="https://github.com/avmand/GriD_Fashion/blob/master/images/logo2.png" width=12.5%"><br>
+  <img src="https://github.com/avmand/GriD_Fashion/blob/master/images/logo2.png" width=12.5%><br>
 ## Use Cases
 Show Fashion Retailers current trends and failures and provide them with an analysis of what is working in the market product wise and reduce manual effort. Help fashion retailers know about possible future trends, and give them more insight into how they are derived product wise.
   
