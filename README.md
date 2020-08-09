@@ -143,7 +143,11 @@ We also implemented a google images scraper to scrape images from the internet a
  <b> b. Output: </b> Images <br>
  <b> c. Code:</b> GriD_Fashion/FutureTrends/GoogleImagesScraper/scrapeImages.py <br>
   
-- <b> CNNs:</b>
+- <b> CNNs:</b><br>
+A Convolutional Neural Network is used here to identify the category to which the given article of clothing belongs to. To train this, we used the Myntra Dataset wgich consisted of nearly 44,500 images to train, validate and test our model. After generating features for the dataset, we saved the data to a NumPy binary file (the .npy files can be downloaded from our google drive link). We used a VGG16 model for transfer learning and obtained an accuracy of 86% on our test dataset. <br>
+<b> a. Input: </b>  Myntra Dataset (Google Drive link), numpy files and test images from the user. A feature has been included to aid in adding any dataset of clothing.  <br>
+<b>  b. Output: </b> Category of the test images. <br>
+<b>  c. Code: </b> CNN_clasifier/cnnClassifier.py <br>
 
 - <b> GANS: </b><br>
 Generative Adversial Networks consist of 2 neural network models: the generator and the discriminator. The Fashion GAN we implemented learns from a dataset of trendy images (tshirts, skirts and dresses) and generates its own image with a minimum discriminator loss of 0.084. The Generator and the discriminator is made of 7 layers and 6 layers with a leaky RELU activation to avoid the vanishing gradient descent problem. <br>
