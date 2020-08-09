@@ -145,7 +145,7 @@ We also implemented a google images scraper to scrape images from the internet a
   
 - <b> CNNs:</b><br>
 A Convolutional Neural Network is used here to identify the category to which the given article of clothing belongs to. To train this, we used the Myntra Dataset wgich consisted of nearly 44,500 images to train, validate and test our model. After generating features for the dataset, we saved the data to a NumPy binary file (the .npy files can be downloaded from our google drive link). We used a VGG16 model for transfer learning and obtained an accuracy of 86% on our test dataset. <br>
-<b> a. Input: </b>  Myntra Dataset (<a href= "https://drive.google.com/drive/folders/1xqIcVBhV1elZghY7vkzTGh1wh9Gr2erq?usp=sharing"> Google Drive link</a>), numpy files and test images from the user. A feature has been included to aid in adding any dataset of clothing.  <br>
+<b> a. Input: </b>  Myntra Dataset (<a href= "https://drive.google.com/drive/folders/1xqIcVBhV1elZghY7vkzTGh1wh9Gr2erq?usp=sharing">Google Drive link</a>), numpy files and test images from the user. A feature has been included to aid in adding any dataset of clothing.  <br>
 <b>  b. Output: </b> Category of the test images. <br>
 <b>  c. Code: </b> CNN_clasifier/cnnClassifier.py <br>
 
