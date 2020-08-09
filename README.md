@@ -135,7 +135,7 @@ Predicting future trends is based on the following pipeline:
 A huge majority of future trends are adopted from what clothing items celebrities endorse. We implemented an instagram scraping module in python to get the latest brand endorsements by instagram influencers to use as input for our Trendifying Model stage later on.<br>
  <b>  a. Input: </b>   List of instagram profiles to scrape from <br>
  <b>  b. Output: </b>  Recent fashion endorsment images from user profiles <br>
- <b>  c. Code: </b> <br>
+ <b>  c. Code: </b> <br> https://github.com/milonimittal/Instagram-Scraper
  
 - <b> Webscraper-2 </b>: 
 We also implemented a google images scraper to scrape images from the internet according to a given query to generate a dataset to train our CNN Classifier. <br>
