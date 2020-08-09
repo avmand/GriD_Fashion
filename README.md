@@ -40,8 +40,8 @@ The concepts and tech stack used here are:
 <br><p align="center"><img src="https://github.com/avmand/GriD_Fashion/blob/master/images/1.png" width=37.5%></p><br>
 
 ### The Modules :beginner:
-Identifying current trends is based on the following pipeline:
-- Scraping Reviews, Ratings and Images
+Identifying current trends is based on the following pipeline:<br>
+- <b>Scraping Reviews, Ratings and Images</b><br>
 We used BeautifulSoup to extract links from the specific category's page. After that, features such as brands, item descriptions, ratings and reviews were extracted from each of the extracted URLs.</br>
 <b>a. Input: </b> Input: URL for the required category from any e-commerce website.</br>
 <b>b. Output: </b> A csv file with the extracted details. </br>
@@ -50,7 +50,7 @@ We used BeautifulSoup to extract links from the specific category's page. After 
 	 -skirt-flipkart-final-final.csv </br>
 <b>   c. Code: </b> Review-scrape.py 
 
-- Scoring Products
+- <b>Scoring Products</b><br>
 The Vader Polarity Score was used to measure the sentiment of buyers towards the given product. After that, the final score was calculated using the Vader Score and the average rating of a particular product.</br>
 <b> a. Input: </b> The CSV files from the previous module</br>
 	-tshirt-flipkart-final-final.csv </br>
@@ -65,7 +65,7 @@ The Vader Polarity Score was used to measure the sentiment of buyers towards the
 	 -dresses_current_trends.ipynb </br>
 	 -skirts_current_trends.ipynb </br>
 
-- Ranking Products
+- <b>Ranking Products</b><br>
 This module utilizes Bigram Analysis to rank products. From the description of the products, we removed stopwords (such as Tshirt, Men's, etc). After creating a list of bigrams, they are ranked according to their frequency. After that, we collect the top five and bottom five bigrams.
 <br/> For tshirts, we took into account the neck pattern, colour and print.</br>
  <b> a. Input: </b> The CSV files with the each product and its final score.</br>
@@ -83,7 +83,7 @@ This module utilizes Bigram Analysis to rank products. From the description of t
 	 -dresses_current_trends.ipynb </br>
 	 -skirts_current_trends.ipynb </br>
 
-- Currently Trending Leaderboard
+- <b>Currently Trending Leaderboard</b><br>
 After extracting the rows in which the top and bottom bigrams appear in, we create a CSV file with the bigram, the ratings of all the products in which the bigram occurs, the bigram itself and the count of each of these.</br>
 <b> a. Input: </b> CSV files with the top and bottom five products and their IDs.</br>
 	 -tshirts/colour_top_bottom.csv </br>
@@ -102,7 +102,7 @@ After extracting the rows in which the top and bottom bigrams appear in, we crea
 	 -dress_graph.py </br>
 	 -skirts_graph.py 
 
-- Current Trends UI
+- <b>Current Trends UI</b><br>
 The top and bottom five products are displayed. An interactive bar graph representing the top and bottom five bigrams and their rating is there as well.</br>
 <b> a. Input: </b> The data required for the leaderboard.</br>
 	 -tshirt_colour_top_bottom.csv </br>
