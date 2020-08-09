@@ -112,7 +112,7 @@ The top and bottom five products are displayed. An interactive bar graph represe
 	 -skirt_top_bottom.csv </br>
 <b> b. Output: </b> HTML site using a local host </br>
 <b> c. Code: </b> MainUI.py </br>
- 	 To run it, follow the instructions given <a href="https://timmyreilly.azurewebsites.net/python-flask-windows-development-environment-setup/">here</a> to set up a virtual environment for Flask. Then execute your code using 'python3 MainUI.py' and navigate to your local host address (127.0.0.1:5000).
+ 	 To run it, follow the instructions given <a href="https://timmyreilly.azurewebsites.net/python-flask-windows-development-environment-setup/">here</a> to set up a virtual environment for Flask. Then execute your code using 'python3 MainUI.py' and navigate to your local host address (127.0.0.1:5000). Also, please ensure that you have a stable internet connection as the data visualizations require the source code from the D3.js website.
 
 
 ## Predicting Future Trends
