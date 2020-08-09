@@ -10,7 +10,7 @@ Our aim is to show Fashion Retailers current trends and failures and provide the
   
 ## Identifying Current Trends
 ### To extract current trends, we make use of e-commerce websites. But why? :iphone:
-E-commerce websites like Flipkart, Myntra, Nordstorm etc. give a good representation of what people are liking and buying online. The reviews, rating, number of rating, number of reviews give a good impression of what today's trends are. It gives an indirect representation of how a product is doing in the market. A good product would have more positive reviews and higher ratings showing that the particular product has features that are being liked by the audience. We can use the images provided by the e-commerce websites to come up with a mood board which showcases what is trending and what is not!
+E-commerce websites like <a href="https://www.flipkart.com/">Flipkart</a>, Myntra, Nordstorm etc. give a good representation of what people are liking and buying online. The reviews, rating, number of rating, number of reviews give a good impression of what today's trends are. It gives an indirect representation of how a product is doing in the market. A good product would have more positive reviews and higher ratings showing that the particular product has features that are being liked by the audience. We can use the images provided by the e-commerce websites to come up with a mood board which showcases what is trending and what is not!
 
 ### The Dataset  :page_facing_up:
 The dataset consists of data scraped from various e-commerce websites. The details scraped are shown here.   
