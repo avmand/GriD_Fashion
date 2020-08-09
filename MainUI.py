@@ -45,12 +45,12 @@ def api_currenttrends():
         
         colnames=['sno','URL','id','desc','stars','num_ratings','num_reviews','reviews','vader_score','final_score']
         reqdcolnames=['id','stars','desc','URL','final_score']  
-        dataset_csv = pd.read_csv('Miloni_part/final_csv/tshirts/tshirts_csv_final.csv',names=colnames, delimiter=',', error_bad_lines=False, 
+        dataset_csv = pd.read_csv('CurrentTrends/final_csv/tshirts/tshirts_csv_final.csv',names=colnames, delimiter=',', error_bad_lines=False, 
                                   header=None,usecols=reqdcolnames, na_values=" NaN")
         dataset_csv = dataset_csv.dropna()
         dataset_csv2=dataset_csv.sort_values(by='final_score', ascending=False)
         dataset_csv2=dataset_csv2.reset_index()
-        print(dataset_csv2.head())
+        #print(dataset_csv2.head())
         for i in range(1, 6):
             top1_name.append(dataset_csv2['desc'][i])
             top1_description.append(dataset_csv2['URL'][i])
@@ -61,8 +61,8 @@ def api_currenttrends():
             bottom1_score.append(dataset_csv2['final_score'][i])
             
         
-        df = pd.read_csv('tshirt_colour_top_bottom.csv')
-        print(df.head())
+        df = pd.read_csv('CurrentTrends/Leaderboard/tshirt_colour_top_bottom.csv')
+        #print(df.head())
         df = df[["Bigram", "Rating", "Count"]]
         
         # order in the groupby here matters, it determines the json nesting
@@ -101,8 +101,8 @@ def api_currenttrends():
         
         
         
-        df = pd.read_csv('tshirt_neck_top_bottom.csv')
-        print(df.head())
+        df = pd.read_csv('CurrentTrends/Leaderboard/tshirt_neck_top_bottom.csv')
+        #print(df.head())
         df = df[["Bigram", "Rating", "Count"]]
     
         # order in the groupby here matters, it determines the json nesting
@@ -139,8 +139,8 @@ def api_currenttrends():
         
         
         
-        df = pd.read_csv('tshirt_print_top_bottom.csv')
-        print(df.head())
+        df = pd.read_csv('CurrentTrends/Leaderboard/tshirt_print_top_bottom.csv')
+        #print(df.head())
         df = df[["Bigram", "Rating", "Count"]]
     
         # order in the groupby here matters, it determines the json nesting
@@ -199,12 +199,12 @@ def api_currenttrends():
         
         colnames=['sno','URL','id','desc','stars','num_ratings','num_reviews','reviews','vader_score','final_score']
         reqdcolnames=['id','stars','desc','URL','final_score']  
-        dataset_csv = pd.read_csv('Miloni_part/final_csv/dresses/dresses_csv_final.csv',names=colnames, delimiter=',', error_bad_lines=False, 
+        dataset_csv = pd.read_csv('CurrentTrends/final_csv/dresses/dresses_csv_final.csv',names=colnames, delimiter=',', error_bad_lines=False, 
                                   header=None,usecols=reqdcolnames, na_values=" NaN")
         dataset_csv = dataset_csv.dropna()
         dataset_csv2=dataset_csv.sort_values(by='final_score', ascending=False)
         dataset_csv2=dataset_csv2.reset_index()
-        print(dataset_csv2.head())
+        #print(dataset_csv2.head())
         for i in range(1, 6):
             top1_name.append(dataset_csv2['desc'][i])
             top1_description.append(dataset_csv2['URL'][i])
@@ -214,8 +214,8 @@ def api_currenttrends():
             bottom1_description.append(dataset_csv2['URL'][i])
             bottom1_score.append(dataset_csv2['final_score'][i])
         
-        df = pd.read_csv('dress_top_bottom.csv')
-        print(df.head())
+        df = pd.read_csv('CurrentTrends/Leaderboard/dress_top_bottom.csv')
+        #print(df.head())
         df = df[["Bigram", "Rating", "Count"]]
     
         # order in the groupby here matters, it determines the json nesting
@@ -269,12 +269,12 @@ def api_currenttrends():
         
         colnames=['sno','URL','id','desc','stars','num_ratings','num_reviews','reviews','vader_score','final_score']
         reqdcolnames=['id','stars','desc','URL','final_score']  
-        dataset_csv = pd.read_csv('Miloni_part/final_csv/skirts/skirts_csv_final.csv',names=colnames, delimiter=',', error_bad_lines=False, 
+        dataset_csv = pd.read_csv('CurrentTrends/final_csv/skirts/skirts_csv_final.csv',names=colnames, delimiter=',', error_bad_lines=False, 
                                   header=None,usecols=reqdcolnames, na_values=" NaN")
         dataset_csv = dataset_csv.dropna()
         dataset_csv2=dataset_csv.sort_values(by='final_score', ascending=False)
         dataset_csv2=dataset_csv2.reset_index()
-        print(dataset_csv2.head())
+        #print(dataset_csv2.head())
         for i in range(1, 6):
             top1_name.append(dataset_csv2['desc'][i])
             top1_description.append(dataset_csv2['URL'][i])
@@ -284,8 +284,8 @@ def api_currenttrends():
             bottom1_description.append(dataset_csv2['URL'][i])
             bottom1_score.append(dataset_csv2['final_score'][i])
         
-        df = pd.read_csv('skirt_top_bottom.csv')
-        print(df.head())
+        df = pd.read_csv('CurrentTrends/Leaderboard/skirt_top_bottom.csv')
+        #print(df.head())
         df = df[["Bigram", "Rating", "Count"]]
     
         # order in the groupby here matters, it determines the json nesting

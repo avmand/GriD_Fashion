@@ -3,10 +3,10 @@ import csv
 import pandas as pd
 import math
 
-read_objfiles=['Miloni_part/final_csv/tshirts/colour_top_bottom.csv',
-               'Miloni_part/final_csv/tshirts/neck_top_bottom.csv',
-               'Miloni_part/final_csv/tshirts/print_top_bottom.csv']
-dataset_csv_files='Miloni_part/final_csv/tshirts/tshirts_csv_final.csv'
+read_objfiles=['CurrentTrends/final_csv/tshirts/colour_top_bottom.csv',
+               'CurrentTrends/final_csv/tshirts/neck_top_bottom.csv',
+               'CurrentTrends/final_csv/tshirts/print_top_bottom.csv']
+dataset_csv_files='CurrentTrends/final_csv/tshirts/tshirts_csv_final.csv'
 colnames=['sno','URL','id','desc','stars','num_ratings','num_reviews','reviews','vader_score','final_score']
 reqdcolnames=['id','stars','num_ratings']
 write_objfiles=['tshirt_colour_top_bottom.csv',

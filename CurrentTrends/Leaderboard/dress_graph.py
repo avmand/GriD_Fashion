@@ -3,8 +3,8 @@ import csv
 import pandas as pd
 import math
 
-read_objfiles=['Miloni_part/final_csv/dresses/dress_top_bottom.csv']
-dataset_csv_files='Miloni_part/final_csv/dresses/dresses_csv_final.csv'
+read_objfiles=['CurrentTrends/final_csv/dresses/dress_top_bottom.csv']
+dataset_csv_files='CurrentTrends/final_csv/dresses/dresses_csv_final.csv'
 colnames=['sno','URL','id','desc','stars','num_ratings','num_reviews','reviews','vader_score','final_score']
 reqdcolnames=['id','stars','num_ratings']
 write_objfiles=['dress_top_bottom.csv']
